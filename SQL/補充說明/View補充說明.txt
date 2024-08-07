@@ -1,0 +1,19 @@
+檢視表是一個虛擬的資料表，
+
+在使用時，設計者可自行將多個表格進行關聯、篩選，製作成一份獨立的檢視表
+
+使用上，具有以下優點
+
+簡單明瞭: 使用者不需要理解整個資料結構，直接呼叫檢視表就能取得整合完成的資料
+
+安全: 使用者僅能看到檢視表允許查詢的部分
+
+獨立: 檢視表結構會彙整關聯的資料表，當關聯資料表新增資料時，也能同時取得；
+      僅有當關聯表修改列名時，才需要調整檢視表的結構對應名稱
+
+
+https://www.yiibai.com/mysql/view-local-cascaded-in-with-check-option.html
+
+https://www.fooish.com/sql/view.html
+https://www.cnblogs.com/geaozhang/p/6792369.html
+https://itbilu.com/database/mysql/E1q5C22_.html

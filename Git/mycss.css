@@ -1,0 +1,26 @@
+body {
+	color: #000;
+	background:#fff;
+	}
+
+body, div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+	}
+
+
+address, em, strong {
+	font-style:normal;
+	font-weight:normal;
+	}
+
+li {
+	list-style: none;
+	}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+	}

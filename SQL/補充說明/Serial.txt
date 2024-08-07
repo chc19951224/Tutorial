@@ -1,0 +1,5 @@
+SERIAL is an alias for BIGINT UNSIGNED NOT NULL AUTO_INCREMENT UNIQUE.
+
+SERIAL DEFAULT VALUE in the definition of an integer column is an alias 
+
+for NOT NULL AUTO_INCREMENT UNIQUE.

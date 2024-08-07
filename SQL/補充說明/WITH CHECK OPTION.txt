@@ -1,0 +1,22 @@
+加入「WITH CHECK OPTION」設定的View元件，在執行資料維護工作時，會先執行檢查的工作，
+
+規則是一定要符合「View元件中WHERE設定的條件」
+
+
+
+通過有with check option選項的檢視表操作基表(只是面對單表，對連接多表的檢視表正在尋找答案)，
+
+有以下結論：
+首先檢視表只操作它可以查詢出來的資料，對於它查詢不出的資料，
+
+即使基表有，也不可以通過檢視表來操作。
+1.對於update,有with check option，
+
+要保證update後，資料要被檢視表查詢出來
+2.對於delete,有無with check option都一樣
+
+
+4.對於insert,有with check option，要保證insert後，
+
+資料要被檢視表查詢出來
+對於沒有where 子句的檢視表，使用with check option是多餘的。
