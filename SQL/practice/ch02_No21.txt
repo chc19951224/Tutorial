@@ -1,0 +1,23 @@
+選擇題
+1C
+2A
+3B
+4B
+5D
+6A
+實作題
+1
+SELECT CountryCode, Name, Population
+FROM city 
+WHERE Population > 5000000
+
+2
+SELECT Continent, Code, Name, Population
+FROM country 
+WHERE Continent IN ('Asia','Europe','Africa')
+
+3
+SELECT Code, Name, Population
+FROM country 
+WHERE Region IN ('Middle East') 
+ORDER BY Population ASC

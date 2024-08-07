@@ -16,6 +16,8 @@ SELECT 0.1 + 0.1 = 0.2, 0.1E0 + 0.1E0 = 0.2E0
 
 SELECT 0.1 + 0.2 = 0.3, 0.1E0 + 0.2E0 = 0.3E0
 
+SELECT 0.1E0 + 0.2E0
+
 
 SELECT 1+'2', '1'+2, '1E+2'+'2E-2'
 
@@ -26,9 +28,7 @@ SELECT 1+'A', 'B'+2
 SELECT 'Hello!' || 'MySQL!'
 
 
-SET sql_mode = 'PIPES_AS_CONCAT'
-
-
+SET sql_mode = 'PIPES_AS_CONCAT';
 SELECT 'Hello!' || 'MySQL!'
 
 
