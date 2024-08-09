@@ -1,0 +1,28 @@
+選擇題
+1D
+2A
+3C
+4A
+5B
+6D
+
+實作題
+1
+SELECT empno, ename, hiredate,WEEKDAY(hiredate)day 
+FROM cmdev.emp
+
+2
+SELECT ename, job, salary,
+	CASE 
+    	WHEN job='PRESIDENT' THEN salary*2
+        WHEN job='MANAGER' THEN salary*1.5
+        WHEN job='ANALYST' THEN salary*1
+        ELSE salary*0
+        END bonus
+FROM cmdev.emp
+ORDER BY salary DESC
+
+3
+SELECT job, SUM(salary)AS 總和,AVG(salary)AS 平均,MAX(salary)AS 最多,MIN(salary)AS 最少 
+FROM cmdev.emp 
+GROUP BY job

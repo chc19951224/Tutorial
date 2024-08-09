@@ -1,0 +1,20 @@
+選擇題
+1C
+2D
+3A
+4A
+5D
+6A
+
+實做題
+1
+已建表
+
+2
+DESC cmdev.myemp
+
+3
+INSERT INTO cmdev.myemp VALUES 
+(1, 'Betty', 'Johnson', 1200, '1968-01-01'),
+(2, 'Sam', 'Johnson', 900, '1972-09-12'),
+(3, 'Rose', 'Johnson', 1100, '1971-11-06')

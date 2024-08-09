@@ -1,0 +1,26 @@
+選擇題
+1C
+2A
+3D
+4B
+5D
+6B
+
+實作題
+1
+SELECT a.empno, a.ename, a.job, 
+	b.deptno, b.dname
+FROM cmdev.emp a, cmdev.dept b
+
+2
+SELECT empno, ename, job, e.deptno, d.dname
+FROM cmdev.dept d LEFT OUTER JOIN cmdev.emp e ON d.deptno = e.deptno
+
+3
+SELECT Continent, MIN(Population)
+FROM country
+WHERE Continent='Asia'
+UNION
+SELECT Continent, MAX(Population)
+FROM country
+WHERE Continent='Asia'
